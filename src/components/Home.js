@@ -26,11 +26,16 @@ const Home = () => {
         const existing_favorites_id = JSON.parse(localStorage.getItem("favorites")) || [];
 
         if (!existing_favorites_id.includes(quoteId)) {
+            //id 추가
             const updatedFavorites = [...existing_favorites_id, quoteId];
             localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
             console.log("Updated favorites:", updatedFavorites);
         } else {
+            const updatedFavorites = existing_favorites_id.filter((id) => id !== quoteId)
             console.log("This quote is already in favorites.");
+
+            localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+            console.log("Updated favorites:", updatedFavorites);
         }
     }
 
