@@ -1,0 +1,66 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "아프고 고통스러웠던 기억, 처절하게 후회했던 기억, 남을 상처 주고 또 상처받았던 기억, 버림받고 돌아섰던 기억... 그런 기억들을 가슴 한구석에 품고 살아가는 자만이 더 강해지고 뜨거워지고 더 유연해질 수가 있지. 행복은 바로 그런 자만이 쟁취하는 거야. 그러니 잊지 마. 잊지 말고 이겨내. 이겨내지 못하면 너는 영혼이 자라지 않는 어린애일 뿐이야.",
+      "character": "문강태"
+    },
+    {
+      "id": 2,
+      "quote": "완전 극혐이야. 저 둘리 패거리들. 너무 싫어. 얹혀사는 주제에 아주 지들 멋대로야. 난 고길동이 좋더라. 자기 영역 안에 저 떨거지들을 다 들였잖아. 착해. 사람이",
+      "character": "고문영"
+    },
+    {
+      "id": 3,
+      "quote": "2인 3각 해봤어? 두 사람이 발 하나씩 끈으로 묶고 달리는 거. 아들놈 운동회 때문에 두어 번 해봤는데, 꼭 내가 먼저 고꾸라지는 바람에 꼴인 점까지 가본 적이 없어. 자네랑 형, 꼭 2인 3각 뛰는 거 같애. 서로 발목을 잡고 있는 걸까요? 아니 서로 의지하고 있는 거지. 한 사람이 삐끗할 때, 다른 사람이 잘 버텨주면 절대 같이 안 자빠져. 악착같이 버텨봐. 혹시 알아, 언젠가 형이 자넬 붙들어 줄지.",
+      "character": "오지왕&문강태"
+    },
+    {
+      "id": 4,
+      "quote": "'내 주변을 행복하게 만들려면  나 자신부터 행복해야 된다고' 이기적인 게 꼭 나쁜 것만은 아니에요. 너무 힘들면 강태 씨 본인 행복만 생각해요.",
+      "character": "박규영"
+    },
+    {
+      "id": 5,
+      "quote": "그러는 넌, 왜 동화 작가가 됐어? 나? 내가 동화 속 세상을 제일 잘 아니까. 난 아빠가 지어준 이 성에서 진짜 공주님이었거든. 원래 공주들의 삶은 참 힘들어. 엔딩만 좋아. 염병. 원래, 엔딩이 좋으면, 다 좋은 거야.",
+      "character": "고문영&문강태"
+    },
+    {
+      "id": 6,
+      "quote": "혹시 운명을 믿어요? 운명이 뭐 별건가. 이렇게 필요할 때, 나 앞에 나타나주면 그게 운명이지. 니가 내 안전핀 해라. 내가 펑 안 터지게 꽉 붙잡고 있으라고.",
+      "character": "고문영"
+    }
+  ],
+  "locations": [
+    {
+      "location_name": "저주받은성",
+      "location_address": "강원도 원주 사나다 카페",
+      "description": "고문영이 살던 장소 ",
+      "location_img": "https://mblogthumb-phinf.pstatic.net/MjAyMDA4MDNfMTIg/MDAxNTk2NDYzNjI5MzIw.kLgj4oetZ5-x-_7nqUYq2pMJEX5GAIoIajqWOK5jH-gg.Jr9zAn0-vchl9pk1eigFwRKG_VNVGPKIeODGwDV4lfsg.JPEG.amlee74/5I6A0826.JPG?type=w800",
+      "id": 2
+    },
+    {
+      "location_name": "괜찮은 병원 (시크릿블루 카페)",
+      "location_address": "강원 고성군 토성면 아야진북길 31-6",
+      "description": "강태의 직장, 괜찮은 병원",
+      "location_img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230501_167%2F1682944675876Vjnal_JPEG%2F783BAEF1-F73F-4F1F-BA03-EAB1635EEB14.jpeg",
+      "id": 3
+    },
+    {
+      "location_name": "강태,문영 데이트 장소",
+      "location_address": "경기 양주시 옥정동로7길 110",
+      "description": "강태,문영 데이트 장소, 드라마 7회에서 나왔던 장소",
+      "location_img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA5MjlfNTUg%2FMDAxNzI3NjE0MDUyMDIz.16kxdUxFZ2sfyIWLu6Qwc4rsBt2W12N-2Cipt74UEXAg.1wT4Srzs4jHiHnP9SCfm_AKjHp7zpqZiAGmKQvzETX8g.JPEG%2F1000004341.jpg.jpg%3Ftype%3Dw1500_60_sharpen",
+      "id": 4
+    }
+  ],
+  "about":[
+    {
+    "intro": "비정상이라 단정하지 말라.\n이상하다 손가락질 말라.\n기분 나쁘다 따돌리지 말라.\n그들은 좀 유별난 것뿐이며\n그래서 지독히 외로우니\n그대여, 따스한 위로를 건네어다오...",
+    "title": "사이코지만 괜찮아",
+    "subtitle": "전에 없던 극과 극 캐릭터! 그들이 펼치는 사랑에 관한 조금 이상한 로맨틱 코미디!",
+    "theme": "서로의 결핍을 서로의 온기로 채우는 따스한 힐링 휴먼 드라마",
+    "message": "통계에 따르면 우리 국민 80%는 정신증을 앓고 있고, 그 중 20%는 약을 먹어야 하는 수준이다. 이런 시대에 과연 누가 정상과 비정상을 구분할 수 있을까? 단순히 ‘다수’가 ‘정상’이 되는 건 폭력이 아닐까? 말 안통하고, 이해될 수 없는 존재는 격리와 감금만이 답인가? 신은 인간을 본디 외로운 존재로 만들었다. 그래서 외로움을 채워줄 무언가를 찾아 더듬는 게 인간의 본능이다. 결국 모든 의문의 답은 ‘사람’이다. 사람은 사람의 외면 때문에 상처입고 또 사람의 온기로 치유 받는다. 이 드라마도 그것을 원한다. 결핍과 상처투성이인 주인공들이 서로의 온기로 치유되고 성장하는 과정을 바라보며 부디 당신이 위안 받을 수 있기를. "
+    }
+  ]
+}
