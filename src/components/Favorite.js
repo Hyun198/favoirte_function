@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
+import { useFavorites } from '../hooks/useFavorites';
 const Favorite = () => {
     const [quotes, setQuotes] = useState([])
-    const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem('favorites')) || [])
+    const { favorites, handleSave } = useFavorites();
 
     const Fetch_data = async () => {
         try {
@@ -15,19 +15,6 @@ const Favorite = () => {
             console.error(error);
         }
     }
-
-    const handleSave = (quoteId) => {
-        let updated_favorites = favorites.includes(quoteId)
-
-        if (updated_favorites) {
-            updated_favorites = favorites.filter((id) => id !== quoteId);
-        } else {
-            updated_favorites = [...favorites, quoteId];
-        }
-        setFavorites(updated_favorites);
-        localStorage.setItem('favorites', JSON.stringify(updated_favorites));
-    }
-
 
     useEffect(() => {
         Fetch_data();
