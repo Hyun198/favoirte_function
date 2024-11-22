@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+<h2>React의 상태만 이용한 즐겨찾기 기능 구현</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div>
+    즐겨찾기 기능은 쇼핑몰, OTT 서비스, 배달앱 등등 여러가지 서비스에서 필수적인 기능 중 하나이다.
+    즐겨찾기 기능은 찜,장바구니 등등으로 불릴 수 있음.
+    <br><br>
+    사용도가 높은 해당 기능을 구현하는 방법을 기르고 논리적으로 이해하기 쉽게 구현해보고자 했다.
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<div>
+    해당 프로젝트에서는 React의 state값과 localstorage를 이용해 데이터를 다루는 방식을 이용했다.
+</div>
 
-### `npm start`
+<h2>Why Local storage ?</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<ol>
+    <li>간단한 상태 관리</li>
+        <p>백엔드 없이 React 상태와 브라우저의 로컬 스토리지를 통해 데이터를 관리함으로써, 간단한 구조로 즐겨찾기 기능을 구현했습니다.
+        </p>
+    <li>데이터 유지</li>
+    <p>로컬 스토리지를 활용하면 사용자가 페이지를 새로고침하거나 브라우저를 닫았다가 다시 열어도 데이터가 유지되도록 했습니다.</p>
+    <li>데이터베이스 연결 생략</li>
+    <p>데이터 베이스와 연결하는 것은 현재 기능 구현 부분에서는 깊게 들어가고자 하지 않았기 때문에 생략했습니다. 현재 기능에서는 프론트엔드의 기능 구현에 집중했습니다.</p>
+</ol>
