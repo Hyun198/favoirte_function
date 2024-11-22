@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 
     const [quotes, setQuotes] = useState([]);
-
+    const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem('favorites')) || [])
     const Fetch_data = async () => {
         try {
             const response = await fetch("http://localhost:9999/quotes")
@@ -23,35 +23,34 @@ const Home = () => {
 
 
     const handleSave = (quoteId) => {
-        const existing_favorites_id = JSON.parse(localStorage.getItem("favorites")) || [];
-
-        if (!existing_favorites_id.includes(quoteId)) {
-            //id 추가
-            const updatedFavorites = [...existing_favorites_id, quoteId];
-            localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
-            console.log("Updated favorites:", updatedFavorites);
+        let updated_favorites = favorites.includes(quoteId)
+        if (updated_favorites) {
+            updated_favorites = favorites.filter((id) => id !== quoteId);
         } else {
-            const updatedFavorites = existing_favorites_id.filter((id) => id !== quoteId)
-            console.log("This quote is already in favorites.");
-
-            localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
-            console.log("Updated favorites:", updatedFavorites);
+            updated_favorites = [...favorites, quoteId];
         }
+        setFavorites(updated_favorites);
+        localStorage.setItem('favorites', JSON.stringify(updated_favorites));
     }
 
     return (
         <div className="App">
-            <h2>배우들의 명언들</h2>
+            <h2>즐겨찾기 예제</h2>
             <Link to="/favorite">My favorite</Link>
             <div className='quotes_container'>
                 <ul>
-                    {quotes.map((quote) => (
-                        <div className="quote">
-                            <li key={quote.id}>{quote.quote}</li>
-                            <button onClick={() => handleSave(quote.id)}>추가</button>
-                        </div>
-
-                    ))}
+                    {quotes.map((quote) => {
+                        const isFavorite = favorites.includes(quote.id);
+                        return (
+                            <div
+                                key={quote.id}
+                                className={`quote ${isFavorite ? "favorite" : ""}`}
+                                onClick={() => handleSave(quote.id)}
+                            >
+                                {quote.quote}
+                            </div>
+                        );
+                    })}
                 </ul>
             </div>
         </div>
